@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    font-family:"Montserrat", sans-serif;
+    background-color:rgb(237, 241, 243);
+   
+}
+.main{
+    background-color:#fff;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+    margin:0 auto;
+    margin-top:80px;
+    text-align:center;
+    max-width:600px;
+    border-radius:5px solid #fff;
+    padding:20px;
+}
+
+form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
+    align-items:center;
+}
+
+form input[type="text"]{
+    padding:10px;
+    font-size:20px;
+    border:none;
+    outline:none;
+}
+
+form input[type="submit"]{
+    padding:10px;
+    border:none;
+    outline:none;
+    background-color:rgb(131, 2, 252);
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    transition:background-color .3s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color:rgb(138, 18, 203);
+}
+.img{
+   height:50px;
+   width:50px;
+   background-size:contain;
+   background-repeat:no-repeat;
+   background-position:center center;
+}
+
+.temp{
+    font-size:35px;
+    font-weight:bold;
+}
+
+.desc{
+    font-size:22px;
+    margin-top:0px;
+}
+
+.inner,.desc,.details{
+    padding:20px;
+}
+.details{
+   display:flex;
+   justify-content:space-around;
+   align-items:center;
+} 
+
+.details > div{
+    padding:20px;
+    background-color:rgb(237, 241, 243);
+    border-radius:5px;
+    text-align:center;
+    min-height:25px;
+}
+
+@media(max-width:900){
+    form{
+        flex-direction:column;
+    }
+    form input[type="text"]{
+        width:100%;
+        margin-bottom: 10px;
+    }
+}
